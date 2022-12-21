@@ -4,7 +4,6 @@
 require_once( get_theme_file_path( "/inc/tgm.php" ) );
 require_once( get_theme_file_path( "/inc/attachments.php" ) );
 require_once( get_theme_file_path( "/widgets/social-icons-widget.php" ) );
-require_once( get_theme_file_path( "../../plugins/redux-framework" ) );
 
 if ( ! isset( $content_width ) ) {
     $content_width = 960;
@@ -268,3 +267,6 @@ FORM;
 
 add_filter( "get_search_form", "redoyit_search_form" );
 
+//Redux Plugin Include
+require ( get_theme_file_path('../../plugins/redoyit-theme-options/redux-core/framework.php') );
+require ( get_theme_file_path('../../plugins/redoyit-theme-options/sample/config.php') );
